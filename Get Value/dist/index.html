@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Data in Database</title>
+    
+</head>
+<style>
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-inline:auto;
+        margin-top: 3em;
+        max-width: min(100% , 40em);
+        gap: 2em;
+        border: 1px solid black;
+        padding: 1em;
+    }   
+    p{
+        text-align: center;
+    }
+    #value , .big{
+        font-size: 26px;
+        font-weight: 700;
+    }
+</style>
+<body>
+    <div class="container">
+        <p>see robot move</p>
+        <p class="big">robot last move: <span id="value"></span></p>
+        <p>Go <a href="https://moverobot0.web.app/" target="_blank">here</a> to move the robot</p>
+    </div>
+    <script src="bundle.js" ></script>
+    
+</body>
+</html>
